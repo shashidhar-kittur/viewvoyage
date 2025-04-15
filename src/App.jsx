@@ -6,6 +6,7 @@ import SignIn from './components/SignIn';
 import YourList from './components/YourList';
 import LikedVideos from './components/LikedVideos';
 import VideoDetail from './components/VideoDetail';
+import DatabaseStatus from './components/DatabaseStatus';
 import './App.css';
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     <Router>
       <div className="app">
         <Navbar user={user} setUser={setUser} />
+        <DatabaseStatus />
         <Routes>
           <Route path="/" element={<Home videos={videos} onUpload={handleUpload} />} />
           <Route path="/signin" element={<SignIn setUser={setUser} />} />
