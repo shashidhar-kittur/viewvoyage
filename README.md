@@ -89,14 +89,14 @@ ViewVoyage/
      ```
 
 3. **Run the application**
-   - Start the backend:
+   - cd 
+   
      ```bash
-     npm start
+     npm run server
      ```
-   - Start the frontend:
+   
      ```bash
-     cd ../client
-     npm start
+     npm run dev
      ```
 
 
